@@ -2,245 +2,1449 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohammed Yam Hub | Fresh Yam Pre-Order</title>
-  <meta name="description" content="Pre-order fresh quality yam from Mohammed Yam Hub. GHS 20 per tuber. Delivery available around KNUST, Kumasi.">
+
+  <meta
+    name="description"
+    content="Mohammed Yam Hub - Fresh yam pre-orders in KNUST, Kumasi. Small GHS 20, Medium GHS 25, Large GHS 30 per tuber."
+  >
+
+  <title>Mohammed Yam Hub | Fresh Yam Pre-Orders</title>
+
   <style>
-    :root{--green:#075c35;--green2:#0b7a45;--gold:#f5bd16;--cream:#fffaf0;--dark:#10251b;--muted:#65756c;--white:#fff}
-    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:var(--cream)}
-    nav{position:sticky;top:0;z-index:20;background:rgba(7,92,53,.97);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:16px 6%;box-shadow:0 2px 12px #0002}
-    .brand{font-size:22px;font-weight:900}.brand span{color:var(--gold)}
-    nav a{color:#fff;text-decoration:none;margin-left:20px;font-weight:700}
-    .hero{padding:70px 6%;background:linear-gradient(135deg,#075c35 0%,#0b7a45 55%,#eeb71a 160%);color:#fff}
-    .hero-grid{max-width:1150px;margin:auto;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
-    h1{font-size:clamp(42px,7vw,78px);line-height:.95;margin:10px 0 20px}.hero p{font-size:20px;line-height:1.6;max-width:620px}
-    .badge{display:inline-block;background:var(--gold);color:#17301f;padding:10px 16px;border-radius:999px;font-weight:900}
-    .cta{display:inline-block;background:#fff;color:var(--green);padding:15px 22px;border-radius:12px;text-decoration:none;font-weight:900;margin-top:12px}
-    .yam-card{background:#ffffff18;border:1px solid #ffffff35;border-radius:28px;padding:28px;backdrop-filter:blur(8px);text-align:center}
-    .yam-art{font-size:100px;filter:drop-shadow(0 12px 10px #0003)} .price{font-size:42px;font-weight:900;color:var(--gold)}
-    section{padding:60px 6%}.wrap{max-width:1150px;margin:auto} h2{text-align:center;font-size:38px;margin:0 0 12px}.lead{text-align:center;color:var(--muted);margin:0 auto 35px;max-width:700px}
-    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{background:#fff;border-radius:18px;padding:25px;box-shadow:0 8px 30px #17452a12}.feature b{display:block;font-size:20px;margin-bottom:8px}.icon{font-size:32px}
-    .order{background:#f1f7f2}.order-grid{display:grid;grid-template-columns:1fr .8fr;gap:30px;align-items:start}
-    form,.summary{background:#fff;border-radius:22px;padding:28px;box-shadow:0 8px 30px #17452a14}
-    label{display:block;font-weight:800;margin:14px 0 7px} input,select,textarea{width:100%;padding:13px;border:1px solid #d7e1da;border-radius:10px;font-size:16px} input:focus,select:focus,textarea:focus{outline:2px solid #b8e1c9;border-color:var(--green)}
-    .qty{display:flex;gap:10px;align-items:center}.qty button{width:42px;height:42px;border:0;border-radius:10px;background:var(--green);color:#fff;font-size:22px}.qty input{text-align:center}
-    .total{font-size:28px;font-weight:900;margin:20px 0;color:var(--green)} .submit{width:100%;border:0;background:var(--green);color:#fff;padding:16px;border-radius:12px;font-size:18px;font-weight:900;cursor:pointer}.submit:hover{background:var(--green2)}
-    .summary ul{padding-left:20px;line-height:1.9}.note{font-size:13px;color:var(--muted)}
-    .contact{background:var(--green);color:#fff;text-align:center}.contact a{color:var(--gold);font-weight:900;text-decoration:none}
-    footer{background:#073b24;color:#dbece1;text-align:center;padding:22px}
-    @media(max-width:800px){.hero-grid,.order-grid{grid-template-columns:1fr}.features{grid-template-columns:1fr}.hero{padding-top:50px}nav a{display:none}}
+    :root {
+      --green: #176b3a;
+      --dark-green: #0d4d2b;
+      --light-green: #eef8f1;
+      --yellow: #f4c542;
+      --white: #ffffff;
+      --text: #17231b;
+      --muted: #68736c;
+      --border: #dbe5de;
+      --background: #f6f9f7;
+      --danger: #c62828;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(
+        135deg,
+        var(--dark-green),
+        var(--green)
+      );
+      color: white;
+      padding: 22px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.12);
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+    }
+
+    .brand span {
+      color: var(--yellow);
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px 50px;
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: var(--green);
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 650px;
+      margin-bottom: 25px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .button-primary {
+      background: var(--green);
+      color: white;
+    }
+
+    .button-secondary {
+      background: white;
+      color: var(--green);
+      border: 1px solid var(--border);
+    }
+
+    .yam-card {
+      background: white;
+      border-radius: 24px;
+      padding: 35px 25px;
+      text-align: center;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+      border: 1px solid var(--border);
+    }
+
+    .yam-art {
+      font-size: 80px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 38px;
+      font-weight: 900;
+      color: var(--green);
+    }
+
+    .price-subtitle {
+      color: var(--muted);
+      margin-bottom: 15px;
+    }
+
+    .price-list {
+      text-align: left;
+      margin-top: 20px;
+      border-top: 1px solid var(--border);
+      padding-top: 15px;
+    }
+
+    .price-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 7px 0;
+      font-weight: 600;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 55px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-title h2 {
+      font-size: 34px;
+      margin-bottom: 8px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+    }
+
+    .order-card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      border: 1px solid var(--border);
+    }
+
+    form {
+      display: grid;
+      gap: 18px;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 16px;
+      outline: none;
+      background: white;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(23,107,58,0.1);
+    }
+
+    .order-id {
+      background: var(--light-green);
+      font-weight: 700;
+      color: var(--green);
+    }
+
+    .size-order {
+      display: grid;
+      gap: 12px;
+    }
+
+    .size-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 16px;
+      background: #f7fbf8;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .size-info b {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 3px;
+    }
+
+    .size-info span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .qty {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .qty button {
+      width: 42px;
+      height: 42px;
+      border: none;
+      border-radius: 9px;
+      background: var(--green);
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .qty button:hover {
+      background: var(--dark-green);
+    }
+
+    .qty input {
+      width: 65px;
+      height: 42px;
+      text-align: center;
+      padding: 8px;
+      font-weight: 700;
+    }
+
+    .total-box {
+      background: var(--dark-green);
+      color: white;
+      padding: 20px;
+      border-radius: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      margin-top: 5px;
+    }
+
+    .total-box span:first-child {
+      font-weight: 700;
+    }
+
+    #total {
+      font-size: 27px;
+      font-weight: 900;
+      color: var(--yellow);
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 14px;
+      background: var(--light-green);
+      padding: 13px;
+      border-radius: 10px;
+    }
+
+    .summary {
+      background: #fafcfb;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .summary h3 {
+      margin-bottom: 12px;
+    }
+
+    .summary-line {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      border-bottom: 1px solid #edf1ee;
+    }
+
+    .summary-line:last-child {
+      border-bottom: none;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .step {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+    }
+
+    .step-number {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--green);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      margin-bottom: 13px;
+    }
+
+    .step h3 {
+      margin-bottom: 7px;
+    }
+
+    .step p {
+      color: var(--muted);
+    }
+
+    footer {
+      background: var(--dark-green);
+      color: white;
+      padding: 35px 20px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    footer strong {
+      color: var(--yellow);
+    }
+
+    .whatsapp-button {
+      width: 100%;
+      background: #25d366;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 11px;
+      font-size: 17px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .whatsapp-button:hover {
+      background: #1ebe5d;
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 45px;
+      }
+
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .size-row {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .qty {
+        width: 100%;
+      }
+
+      .qty input {
+        flex: 1;
+      }
+
+      .nav {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .order-card {
+        padding: 20px;
+      }
+
+      .total-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
   </style>
 </head>
+
 <body>
-<nav>
-  <div class="brand">MOHAMMED <span>YAM HUB</span></div>
-  <div><a href="#about">Why Us</a><a href="#order">Order</a><a href="#contact">Contact</a></div>
-</nav>
 
-<header class="hero">
-  <div class="hero-grid">
-    <div>
-      <span class="badge">PRE-ORDER NOW • DEADLINE: 17TH OCTOBER</span>
-      <h1>Fresh Yam,<br><span style="color:#f5bd16">Good Health 😋</span></h1>
-      <p>Get fresh, quality yam conveniently delivered around KNUST, Kumasi. Reserve your tubers before the pre-order deadline.</p>
-      <a class="cta" href="#order">Place My Order →</a>
+  <!-- HEADER -->
+  <header>
+    <div class="nav">
+      <div class="brand">
+        MOHAMMED <span>YAM HUB</span>
+      </div>
+
+      <a href="#order">Order Now</a>
     </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div>
+      <h1>
+        Fresh Yam.<br>
+        <span>Good Health.</span>
+      </h1>
+
+      <p>
+        Order fresh, quality yam from Mohammed Yam Hub.
+        Choose different yam sizes in the same order and get convenient
+        delivery around KNUST, Kumasi.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#order" class="button button-primary">
+          Order Your Yam
+        </a>
+
+        <a href="#prices" class="button button-secondary">
+          View Prices
+        </a>
+      </div>
+    </div>
+
+
     <div class="yam-card">
+
       <div class="yam-art">🍠</div>
-      <div class="price">GHS 20</div>
-      <div>per tuber</div>
-      <p>Delivery available to KNUST, Kumasi • GHS 5 delivery fee</p>
-    </div>
-  </div>
-</header>
 
-<section id="about">
-  <div class="wrap">
-    <h2>Fresh. Quality. Convenient.</h2>
-    <p class="lead">Mohammed Yam Hub makes it simple to reserve fresh yam ahead of time.</p>
-    <div class="features">
-      <div class="feature"><div class="icon">🌿</div><b>Fresh & Natural</b>Quality yam selected for your order.</div>
-      <div class="feature"><div class="icon">❤️</div><b>Nutritious</b>A convenient staple for your meals.</div>
-      <div class="feature"><div class="icon">🚚</div><b>Delivery Available</b>Delivery around KNUST, Kumasi for GHS 5.</div>
-    </div>
-  </div>
-</section>
+      <div class="price">
+        GHS 20–30
+      </div>
 
-<section class="order" id="order">
-  <div class="wrap">
-    <h2>Place Your Order</h2>
-    <p class="lead">Fill in your details. When you submit, WhatsApp will open with your order summary ready to send.</p>
-    <div class="order-grid">
+      <div class="price-subtitle">
+        per tuber by size
+      </div>
+
+      <div class="price-list">
+
+        <div class="price-item">
+          <span>Small</span>
+          <span>GHS 20</span>
+        </div>
+
+        <div class="price-item">
+          <span>Medium</span>
+          <span>GHS 25</span>
+        </div>
+
+        <div class="price-item">
+          <span>Large</span>
+          <span>GHS 30</span>
+        </div>
+
+      </div>
+
+      <p style="margin-top:15px; color:#68736c;">
+        Delivery to KNUST, Kumasi: GHS 5
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRICES -->
+  <section class="section" id="prices">
+
+    <div class="section-title">
+      <h2>Our Yam Sizes</h2>
+      <p>Choose one size or mix different sizes in one order.</p>
+    </div>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-number">S</div>
+        <h3>Small Yam</h3>
+        <p>
+          GHS 20 per tuber.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">M</div>
+        <h3>Medium Yam</h3>
+        <p>
+          GHS 25 per tuber.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">L</div>
+        <h3>Large Yam</h3>
+        <p>
+          GHS 30 per tuber.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ORDER FORM -->
+  <section class="section" id="order">
+
+    <div class="section-title">
+      <h2>Place Your Order</h2>
+      <p>
+        Select the quantities you want and submit your order through WhatsApp.
+      </p>
+    </div>
+
+
+    <div class="order-card">
+
       <form id="orderForm">
-        <label for="orderId">Order ID</label>
-        <input id="orderId" readonly placeholder="Generated automatically">
 
-        <label for="name">Full Name</label>
-        <input id="name" required placeholder="Your name">
+        <!-- ORDER ID -->
+        <div>
+          <label for="orderId">
+            Order ID
+          </label>
 
-        <label for="phone">Phone Number</label>
-        <input id="phone" required placeholder="e.g. 024 000 0000">
+          <input
+            id="orderId"
+            class="order-id"
+            type="text"
+            readonly
+          >
+        </div>
 
-        <div class="size-order">
 
-  <div class="size-row">
-    <div>
-      <b>Small</b>
-      <span>GHS 20 / tuber</span>
-    </div>
-    <div class="qty">
-      <button type="button" onclick="changeSizeQty('small', -1)">−</button>
-      <input id="smallQty" type="number" min="0" value="0">
-      <button type="button" onclick="changeSizeQty('small', 1)">+</button>
-    </div>
-  </div>
+        <!-- NAME -->
+        <div>
+          <label for="name">
+            Full Name
+          </label>
 
-  <div class="size-row">
-    <div>
-      <b>Medium</b>
-      <span>GHS 25 / tuber</span>
-    </div>
-    <div class="qty">
-      <button type="button" onclick="changeSizeQty('medium', -1)">−</button>
-      <input id="mediumQty" type="number" min="0" value="0">
-      <button type="button" onclick="changeSizeQty('medium', 1)">+</button>
-    </div>
-  </div>
+          <input
+            id="name"
+            type="text"
+            required
+            placeholder="Your name"
+          >
+        </div>
 
-  <div class="size-row">
-    <div>
-      <b>Large</b>
-      <span>GHS 30 / tuber</span>
-    </div>
-    <div class="qty">
-      <button type="button" onclick="changeSizeQty('large', -1)">−</button>
-      <input id="largeQty" type="number" min="0" value="0">
-      <button type="button" onclick="changeSizeQty('large', 1)">+</button>
-    </div>
-  </div>
+
+        <!-- PHONE -->
+        <div>
+          <label for="phone">
+            Phone Number
+          </label>
+
+          <input
+            id="phone"
+            type="tel"
+            required
+            placeholder="e.g. 024 000 0000"
+          >
+        </div>
+
+
+        <!-- YAM SIZES -->
+        <div>
+
+          <label>
+            Choose Yam Sizes
+          </label>
+
+          <div class="size-order">
+
+
+            <!-- SMALL -->
+            <div class="size-row">
+
+              <div class="size-info">
+                <b>Small</b>
+                <span>GHS 20 / tuber</span>
+              </div>
+
+              <div class="qty">
+
+                <button
+                  type="button"
+                  onclick="changeSizeQty('small', -1)"
+                >
+                  −
+                </button>
+
+                <input
+                  id="smallQty"
+                  type="number"
+                  min="0"
+                  value="0"
+                >
+
+                <button
+                  type="button"
+                  onclick="changeSizeQty('small', 1)"
+                >
+                  +
+                </button>
+
+              </div>
+
+            </div>
+
+
+            <!-- MEDIUM -->
+            <div class="size-row">
+
+              <div class="size-info">
+                <b>Medium</b>
+                <span>GHS 25 / tuber</span>
+              </div>
+
+              <div class="qty">
+
+                <button
+                  type="button"
+                  onclick="changeSizeQty('medium', -1)"
+                >
+                  −
+                </button>
+
+                <input
+                  id="mediumQty"
+                  type="number"
+                  min="0"
+                  value="0"
+                >
+
+                <button
+                  type="button"
+                  onclick="changeSizeQty('medium', 1)"
+                >
+                  +
+                </button>
+
+              </div>
+
+            </div>
+
+
+            <!-- LARGE -->
+            <div class="size-row">
+
+              <div class="size-info">
+                <b>Large</b>
+                <span>GHS 30 / tuber</span>
+              </div>
+
+              <div class="qty">
+
+                <button
+                  type="button"
+                  onclick="changeSizeQty('large', -1)"
+                >
+                  −
+                </button>
+
+                <input
+                  id="largeQty"
+                  type="number"
+                  min="0"
+                  value="0"
+                >
+
+                <button
+                  type="button"
+                  onclick="changeSizeQty('large', 1)"
+                >
+                  +
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
 
-        <label for="delivery">Delivery</label>
-        <select id="delivery">
-          <option value="delivery">Delivery to KNUST, Kumasi — GHS 5</option>
-          <option value="pickup">Pickup — No delivery fee</option>
-        </select>
 
-        <label for="location">Delivery / Pickup Location</label>
-        <input id="location" required placeholder="Hall, hostel, landmark, etc.">
+        <!-- DELIVERY -->
+        <div>
 
-        <label for="room">Room Number</label>
-        <input id="room" required placeholder="e.g. Room 12, Block A">
+          <label for="delivery">
+            Delivery
+          </label>
 
-        <label for="notes">Additional Note (optional)</label>
-        <textarea id="notes" rows="3" placeholder="Any special instruction?"></textarea>
+          <select id="delivery">
 
-        <div class="total">Total: <span id="total">GHS 25</span></div>
-        <button class="submit" type="submit">Order via WhatsApp</button>
-        <p class="note">Price: GHS 20 per tuber. Delivery: GHS 5 when delivery is selected.</p>
+            <option value="delivery">
+              Delivery to KNUST, Kumasi — GHS 5
+            </option>
+
+            <option value="pickup">
+              Pickup — No delivery fee
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <!-- LOCATION -->
+        <div>
+
+          <label for="location">
+            Delivery / Pickup Location
+          </label>
+
+          <input
+            id="location"
+            type="text"
+            required
+            placeholder="Hall, hostel, landmark, etc."
+          >
+
+        </div>
+
+
+        <!-- ROOM -->
+        <div>
+
+          <label for="room">
+            Room Number
+          </label>
+
+          <input
+            id="room"
+            type="text"
+            required
+            placeholder="e.g. Room 12, Block A"
+          >
+
+        </div>
+
+
+        <!-- NOTES -->
+        <div>
+
+          <label for="notes">
+            Additional Note (optional)
+          </label>
+
+          <textarea
+            id="notes"
+            rows="3"
+            placeholder="Any special instruction?"
+          ></textarea>
+
+        </div>
+
+
+        <!-- TOTAL -->
+        <div class="total-box">
+
+          <span>
+            ORDER TOTAL
+          </span>
+
+          <span id="total">
+            GHS 0
+          </span>
+
+        </div>
+
+
+        <!-- PRICE NOTE -->
+        <div class="note">
+
+          <strong>Prices:</strong>
+          Small GHS 20,
+          Medium GHS 25,
+          Large GHS 30 per tuber.
+
+          <br>
+
+          <strong>Delivery:</strong>
+          GHS 5 when delivery is selected.
+
+          <br>
+
+          <strong>Order deadline:</strong>
+          17th October.
+
+        </div>
+
+
+        <!-- SUMMARY -->
+        <div class="summary">
+
+          <h3>
+            Order Summary
+          </h3>
+
+          <div class="summary-line">
+            <span>Small</span>
+            <span>GHS 20</span>
+          </div>
+
+          <div class="summary-line">
+            <span>Medium</span>
+            <span>GHS 25</span>
+          </div>
+
+          <div class="summary-line">
+            <span>Large</span>
+            <span>GHS 30</span>
+          </div>
+
+          <div class="summary-line">
+            <span>Delivery</span>
+            <span>GHS 5</span>
+          </div>
+
+        </div>
+
+
+        <!-- SUBMIT -->
+        <button
+          type="submit"
+          class="whatsapp-button"
+        >
+          Order Through WhatsApp
+        </button>
+
       </form>
 
-      <div class="summary">
-        <h3>Order Information</h3>
-        <p class="note">Every order receives a unique Order ID automatically. Keep the ID for easy order tracking.</p>
-        <ul>
-          <li><b>Price:</b> GHS 20 per tuber</li>
-          <li><b>Order deadline:</b> 17th October</li>
-          <li><b>Delivery area:</b> KNUST, Kumasi</li>
-          <li><b>Delivery fee:</b> GHS 5</li>
-          <li><b>WhatsApp:</b> 0537855962</li>
-        </ul>
-        <hr>
-        <h3>How it works</h3>
-        <ol>
-          <li>Choose the number of tubers.</li>
-          <li>Enter your contact and location.</li>
-          <li>Tap “Order via WhatsApp”.</li>
-          <li>Confirm your order with Mohammed Yam Hub.</li>
-        </ol>
-      </div>
     </div>
-  </div>
-</section>
 
-<section class="contact" id="contact">
-  <h2>Ready for Fresh Yam?</h2>
-  <p>Call or WhatsApp: <a href="https://wa.me/233537855962">0537855962</a></p>
-  <p>Pre-order deadline: <b>17th October</b></p>
-</section>
+  </section>
 
-<footer>© 2026 Mohammed Yam Hub • Fresh Yam, Good health 😋</footer>
 
-<script>
-const PRICE = 20, DELIVERY = 5;
-const qty = document.getElementById('qty');
-const delivery = document.getElementById('delivery');
-const total = document.getElementById('total');
+  <!-- HOW IT WORKS -->
+  <section class="section">
 
-function updateTotal(){
-  const q = Math.max(1, parseInt(qty.value || 1));
-  const fee = delivery.value === 'delivery' ? DELIVERY : 0;
-  total.textContent = 'GHS ' + (q * PRICE + fee);
-}
-function changeQty(n){
-  qty.value = Math.max(1, parseInt(qty.value || 1) + n);
-  updateTotal();
-}
-qty.addEventListener('input', updateTotal);
-delivery.addEventListener('change', updateTotal);
+    <div class="section-title">
 
-function generateOrderId(){
-  const now = new Date();
-  const pad = n => String(n).padStart(2, '0');
-  const date = now.getFullYear() + pad(now.getMonth() + 1) + pad(now.getDate());
-  const time = pad(now.getHours()) + pad(now.getMinutes()) + pad(now.getSeconds());
-  const random = Math.floor(100 + Math.random() * 900);
-  return `MYH-${date}-${time}-${random}`;
-}
+      <h2>
+        How It Works
+      </h2>
 
-function prepareOrderId(){
-  const field = document.getElementById('orderId');
-  if (!field.value) field.value = generateOrderId();
-}
+      <p>
+        Ordering your yam is simple.
+      </p>
 
-document.getElementById('orderForm').addEventListener('submit', function(e){
-  e.preventDefault();
-  prepareOrderId();
-  const orderId = document.getElementById('orderId').value;
-  const name = document.getElementById('name').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const q = Math.max(1, parseInt(qty.value || 1));
-  const mode = delivery.value;
-  const location = document.getElementById('location').value.trim();
-  const room = document.getElementById('room').value.trim();
-  const notes = document.getElementById('notes').value.trim();
-  const fee = mode === 'delivery' ? DELIVERY : 0;
-  const grand = q * PRICE + fee;
+    </div>
 
-  const message =
+
+    <div class="steps">
+
+      <div class="step">
+
+        <div class="step-number">
+          1
+        </div>
+
+        <h3>
+          Choose Your Yam
+        </h3>
+
+        <p>
+          Select the quantities of Small, Medium and Large yams you want.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="step-number">
+          2
+        </div>
+
+        <h3>
+          Submit Your Order
+        </h3>
+
+        <p>
+          Enter your details and send the order directly through WhatsApp.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="step-number">
+          3
+        </div>
+
+        <h3>
+          Receive Your Yam
+        </h3>
+
+        <p>
+          Choose delivery around KNUST or arrange pickup.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      <strong>MOHAMMED YAM HUB</strong>
+    </p>
+
+    <p>
+      Fresh Yam, Good health 😋
+    </p>
+
+    <p style="margin-top:8px;">
+      KNUST, Kumasi
+    </p>
+
+    <p style="margin-top:8px;">
+      Call / WhatsApp:
+      <strong>0537855962</strong>
+    </p>
+
+    <p style="margin-top:15px; font-size:13px;">
+      © 2026 Mohammed Yam Hub. All rights reserved.
+    </p>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    /* =========================
+       YAM PRICES
+    ========================== */
+
+    const PRICES = {
+      small: 20,
+      medium: 25,
+      large: 30
+    };
+
+    const DELIVERY = 5;
+
+
+    /* =========================
+       FORM ELEMENTS
+    ========================== */
+
+    const smallQty =
+      document.getElementById("smallQty");
+
+    const mediumQty =
+      document.getElementById("mediumQty");
+
+    const largeQty =
+      document.getElementById("largeQty");
+
+    const delivery =
+      document.getElementById("delivery");
+
+    const total =
+      document.getElementById("total");
+
+
+    /* =========================
+       GET QUANTITY
+    ========================== */
+
+    function getQty(field) {
+
+      return Math.max(
+        0,
+        parseInt(field.value || 0)
+      );
+
+    }
+
+
+    /* =========================
+       UPDATE TOTAL
+    ========================== */
+
+    function updateTotal() {
+
+      const small =
+        getQty(smallQty);
+
+      const medium =
+        getQty(mediumQty);
+
+      const large =
+        getQty(largeQty);
+
+
+      const yamCost =
+        (small * PRICES.small) +
+        (medium * PRICES.medium) +
+        (large * PRICES.large);
+
+
+      const fee =
+        yamCost > 0 &&
+        delivery.value === "delivery"
+          ? DELIVERY
+          : 0;
+
+
+      const grandTotal =
+        yamCost + fee;
+
+
+      total.textContent =
+        "GHS " + grandTotal;
+
+    }
+
+
+    /* =========================
+       CHANGE SIZE QUANTITY
+    ========================== */
+
+    function changeSizeQty(size, amount) {
+
+      const fields = {
+
+        small: smallQty,
+        medium: mediumQty,
+        large: largeQty
+
+      };
+
+
+      const field =
+        fields[size];
+
+
+      field.value =
+        Math.max(
+          0,
+          getQty(field) + amount
+        );
+
+
+      updateTotal();
+
+    }
+
+
+    /* =========================
+       UPDATE WHEN USER TYPES
+    ========================== */
+
+    [
+      smallQty,
+      mediumQty,
+      largeQty
+    ].forEach(function(field) {
+
+      field.addEventListener(
+        "input",
+        updateTotal
+      );
+
+    });
+
+
+    delivery.addEventListener(
+      "change",
+      updateTotal
+    );
+
+
+    /* =========================
+       GENERATE ORDER ID
+    ========================== */
+
+    function generateOrderId() {
+
+      const now =
+        new Date();
+
+      const pad =
+        function(number) {
+          return String(number)
+            .padStart(2, "0");
+        };
+
+
+      const date =
+        now.getFullYear() +
+        pad(now.getMonth() + 1) +
+        pad(now.getDate());
+
+
+      const time =
+        pad(now.getHours()) +
+        pad(now.getMinutes()) +
+        pad(now.getSeconds());
+
+
+      const random =
+        Math.floor(
+          100 + Math.random() * 900
+        );
+
+
+      return (
+        "MYH-" +
+        date +
+        "-" +
+        time +
+        "-" +
+        random
+      );
+
+    }
+
+
+    /* =========================
+       PREPARE ORDER ID
+    ========================== */
+
+    function prepareOrderId() {
+
+      const field =
+        document.getElementById(
+          "orderId"
+        );
+
+
+      if (!field.value) {
+
+        field.value =
+          generateOrderId();
+
+      }
+
+    }
+
+
+    /* =========================
+       SUBMIT ORDER
+    ========================== */
+
+    document
+      .getElementById("orderForm")
+      .addEventListener(
+        "submit",
+        function(event) {
+
+          event.preventDefault();
+
+
+          prepareOrderId();
+
+
+          const orderId =
+            document
+              .getElementById("orderId")
+              .value;
+
+
+          const name =
+            document
+              .getElementById("name")
+              .value
+              .trim();
+
+
+          const phone =
+            document
+              .getElementById("phone")
+              .value
+              .trim();
+
+
+          const small =
+            getQty(smallQty);
+
+
+          const medium =
+            getQty(mediumQty);
+
+
+          const large =
+            getQty(largeQty);
+
+
+          /* =========================
+             MAKE SURE AT LEAST ONE
+             YAM IS SELECTED
+          ========================== */
+
+          if (
+            small +
+            medium +
+            large ===
+            0
+          ) {
+
+            alert(
+              "Please choose at least one yam tuber."
+            );
+
+            return;
+
+          }
+
+
+          const mode =
+            delivery.value;
+
+
+          const location =
+            document
+              .getElementById("location")
+              .value
+              .trim();
+
+
+          const room =
+            document
+              .getElementById("room")
+              .value
+              .trim();
+
+
+          const notes =
+            document
+              .getElementById("notes")
+              .value
+              .trim();
+
+
+          /* =========================
+             CALCULATE COSTS
+          ========================== */
+
+          const smallCost =
+            small * PRICES.small;
+
+
+          const mediumCost =
+            medium * PRICES.medium;
+
+
+          const largeCost =
+            large * PRICES.large;
+
+
+          const yamCost =
+            smallCost +
+            mediumCost +
+            largeCost;
+
+
+          const fee =
+            mode === "delivery"
+              ? DELIVERY
+              : 0;
+
+
+          const grandTotal =
+            yamCost + fee;
+
+
+          const totalTubers =
+            small +
+            medium +
+            large;
+
+
+          /* =========================
+             CREATE SIZE DETAILS
+          ========================== */
+
+          const sizeLines = [
+
+            small > 0
+              ? `Small: ${small} tuber(s) × GHS 20 = GHS ${smallCost}`
+              : "",
+
+            medium > 0
+              ? `Medium: ${medium} tuber(s) × GHS 25 = GHS ${mediumCost}`
+              : "",
+
+            large > 0
+              ? `Large: ${large} tuber(s) × GHS 30 = GHS ${largeCost}`
+              : ""
+
+          ]
+          .filter(Boolean)
+          .join("\n");
+
+
+          /* =========================
+             WHATSAPP MESSAGE
+          ========================== */
+
+          const message =
 `MOHAMMED YAM HUB — NEW PRE-ORDER
 
 Order ID: ${orderId}
 
 I want to place a yam pre-order.
 
+CUSTOMER DETAILS
+
 Name: ${name}
 Phone: ${phone}
-Quantity: ${q} tuber(s)
-${mode === 'delivery' ? 'Delivery: Yes' : 'Pickup: Yes'}
+
+YAM ORDER
+
+${sizeLines}
+
+Total tubers: ${totalTubers}
+
+DELIVERY
+
+${mode === "delivery"
+  ? "Delivery: Yes"
+  : "Pickup: Yes"}
+
 Location: ${location}
 Room Number: ${room}
-Yam cost: GHS ${q * PRICE}
-Delivery fee: GHS ${fee}
-TOTAL: GHS ${grand}
-Order deadline: 17th October
-${notes ? 'Note: ' + notes : ''}`;
 
-  window.open('https://wa.me/233537855962?text=' + encodeURIComponent(message), '_blank');
-});
-prepareOrderId();
-updateTotal();
-</script>
+PAYMENT SUMMARY
+
+Yam cost: GHS ${yamCost}
+Delivery fee: GHS ${fee}
+
+TOTAL: GHS ${grandTotal}
+
+Order deadline: 17th October
+
+${notes
+  ? "Note: " + notes
+  : ""}`;
+
+
+          /* =========================
+             OPEN WHATSAPP
+          ========================== */
+
+          const whatsappURL =
+            "https://wa.me/233537855962?text=" +
+            encodeURIComponent(message);
+
+
+          window.open(
+            whatsappURL,
+            "_blank"
+          );
+
+        }
+      );
+
+
+    /* =========================
+       INITIAL SETTINGS
+    ========================== */
+
+    prepareOrderId();
+
+    updateTotal();
+
+  </script>
+
 </body>
-</html>
+          </html>
