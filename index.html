@@ -81,11 +81,44 @@
         <label for="phone">Phone Number</label>
         <input id="phone" required placeholder="e.g. 024 000 0000">
 
-        <label for="qty">Number of Yam Tubers</label>
-        <div class="qty">
-          <button type="button" onclick="changeQty(-1)">−</button>
-          <input id="qty" type="number" min="1" value="1" required>
-          <button type="button" onclick="changeQty(1)">+</button>
+        <div class="size-order">
+
+  <div class="size-row">
+    <div>
+      <b>Small</b>
+      <span>GHS 20 / tuber</span>
+    </div>
+    <div class="qty">
+      <button type="button" onclick="changeSizeQty('small', -1)">−</button>
+      <input id="smallQty" type="number" min="0" value="0">
+      <button type="button" onclick="changeSizeQty('small', 1)">+</button>
+    </div>
+  </div>
+
+  <div class="size-row">
+    <div>
+      <b>Medium</b>
+      <span>GHS 25 / tuber</span>
+    </div>
+    <div class="qty">
+      <button type="button" onclick="changeSizeQty('medium', -1)">−</button>
+      <input id="mediumQty" type="number" min="0" value="0">
+      <button type="button" onclick="changeSizeQty('medium', 1)">+</button>
+    </div>
+  </div>
+
+  <div class="size-row">
+    <div>
+      <b>Large</b>
+      <span>GHS 30 / tuber</span>
+    </div>
+    <div class="qty">
+      <button type="button" onclick="changeSizeQty('large', -1)">−</button>
+      <input id="largeQty" type="number" min="0" value="0">
+      <button type="button" onclick="changeSizeQty('large', 1)">+</button>
+    </div>
+  </div>
+
         </div>
 
         <label for="delivery">Delivery</label>
